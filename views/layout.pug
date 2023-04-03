@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        title Employee Directory app
+        link(rel="stylesheet", href="/static/style.css")
+    body 
+        header.navbar
+            h1 
+                a(href='/') Employee Directory App 
+            nav.nav
+                a(href="/employees") All Employees 
+                a(href="/archive") Archive
+
+        block content

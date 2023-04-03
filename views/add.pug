@@ -1,0 +1,35 @@
+extends layout.pug 
+
+block content 
+    .container 
+        h1 Add employeee
+        
+        if error 
+            p.error Something went wrong!
+
+        if success 
+            p.success Employee records are saved
+
+        form.form(action="/add" method='POST')
+            label Full Name 
+            input.input(type="text" name='name' required pattern="[A-Za-z ]+" )
+
+            label Phone Number (9 digits without +998)
+            input.input(type="tel" name="phone" required pattern="[0-9]{9}")
+
+            label Address
+            textarea.input(type="text" name="address" required)
+
+            label Email 
+            input.input(type="email" name="email" required)
+
+            label(for="status") Status (full-time or part-time)
+            if (typeof employee !== 'undefined') 
+                select.input(id="status", name="status" required)
+                    option(value="Part-time", selected=employee.status === 'part-time') Part-time
+                    option(value="Full-time", selected=employee.status === 'full-time') Full-time
+            else
+                select.input(id="status", name="status" required)
+                    option(value="Part-time") Part-time
+                    option(value="Full-time") Full-time
+            button.btn Add employee

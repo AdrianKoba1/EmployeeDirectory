@@ -1,0 +1,242 @@
+:root {
+    font-size: 18px;
+    color: black;
+     
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+.navbar {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    border-bottom: 1px dotted #ccc;
+    padding: 7px;
+}
+.nav a {
+    display: inline-block;
+    padding: 35px 25px;
+    font-size: 22px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+.navbar a:hover {
+    color: blue;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px; 
+    
+}
+
+
+.main-msg {
+    font-size: 2rem;
+    max-width: 90%;
+    padding: 150px 0 40px 0;
+}
+
+.addbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    font-size: 21px;
+    
+}
+.addbutton:hover {
+    background: red;
+}
+
+/* style for adding employee*/
+.form {
+    max-width: 70%;
+    
+}
+.input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    background: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+}
+.btn:hover {
+    background: red;
+}
+
+/* employees page style*/
+
+.employee-wrapper{
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    margin-left: 380px;
+    font-family: inherit;
+    text-align: center;
+    
+}
+
+.delete{
+    display: inline-block;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    font-size: 20px;
+}
+
+.employee{
+    font-size: 23px;
+    
+}
+
+.delete:hover{
+    background-color: red;
+}
+
+.employee:hover {
+    color: blue;
+}
+
+.error {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 20px;
+    color: red;
+    
+}
+.success {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 20px;
+    background-color: rgb(98, 248, 148);
+    margin-left: 380px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 15px;
+    color: black;
+  }
+  
+  .phone, .address, .email, .status {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    padding: 10px;
+  }
+  
+  .email {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .status {
+    color: green;
+  }
+
+  .archive-link {
+    font-size: 20px;
+    color: blue;
+    padding: 15px;
+    font-weight: 700;
+
+  }
+
+  .archive-link:hover {
+    font-size: 20px;
+    color: red;
+    
+    
+  }
+
+  .update-link {
+    width: 10%;
+    display: flex;
+    margin-left: 390px;
+    border-style:double;
+    padding: 12px 18px;
+    background-color: blue;
+    color: white;
+  }
+
+  .update-link:hover {
+    background-color: red;
+    
+  }
+
+  .forupdate {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    
+  }
+
+  .update-wrapper {
+
+    max-width: 60%;
+    align-items: center;
+    margin-left:380px ;
+    
+  }
+
+  .update-wrapper h1 {
+
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .btnupdate{
+    border: 1px solid;
+    padding: 12px 15px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+  }
+  .btnupdate:hover{
+    background-color: red;
+    cursor:pointer;
+  }
+
+  .empty {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+

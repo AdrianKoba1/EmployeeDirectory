@@ -1,0 +1,16 @@
+extends layout.pug 
+
+block content 
+    .container 
+        h1 All employees
+    if deleted
+        p.success Deleted
+    if employees.length === 0
+        p.empty No employees to display.
+            p.empty Please add some employees
+    else
+        each employee in employees
+            .employee-wrapper 
+                a.employee(href=`/employees/${ employee.id }`) #{employee.name}
+                a.delete(href=`/${employee.id}/delete`) Delete
+            

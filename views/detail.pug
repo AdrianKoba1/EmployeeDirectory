@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+
+    .container
+        label Employee Name
+        h1.name #{ employee.name} 
+            if !employee.archive
+             a.archive-link(href=`/employees/${ employee.id }/archive`) Archive employee
+        label Phone Number     
+        p.phone #{ employee.phone}
+        label Address
+        p.address #{ employee.address} 
+        label Email
+        p.email #{ employee.email}
+        label Status 
+        p.status #{ employee.status} 
+    a.update-link(href=`/employees/${ employee.id }/update`) Edit employee
+

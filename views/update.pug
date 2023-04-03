@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .update-wrapper
+    h1 Update Employee
+  
+    form(action=`/employees/${employee.id}/update`, method="POST")
+      input(type='hidden', name='id', value=`${employee.id}`)
+      label(for="name") Full Name:
+      input.forupdate(type="text", id="name", name="name", value=`${employee.name}` required pattern="[A-Za-z ]+")
+      label(for="phone") Phone (9 digits without +998):
+      input.forupdate(type="tel", id="phone", name="phone", value=`${employee.phone}` required pattern="[0-9]{9}")
+      label(for="address") Address:
+      input.forupdate(type="text", id="address", name="address", value=`${employee.address}` required)
+      label(for="email") Email:
+      input.forupdate(type="email", id="email", name="email", value=`${employee.email}` required)
+      label(for="status") Status:
+      select.forupdate(id="status", name="status" required)
+          option(value="Part-time", selected=`${employee.status === 'part-time'}`) Part-time
+          option(value="Full-time", selected=`${employee.status === 'full-time'}`) Full-time
+      button.btnupdate(type="submit") Update Employee
